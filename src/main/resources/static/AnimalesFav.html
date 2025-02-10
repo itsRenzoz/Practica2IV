@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animales Favoritos - AnimalInfo</title>
+    <meta charset="UTF-8"/>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo nav-link">AnimalInfo</a>
+            <ul class="nav-menu">
+      
+            </ul>
+        </nav>
+    </header>
+
+    <section class="fav-animals">
+        <h2>Animales Favoritos</h2>
+        <p>Haz clic en los botones para agregar animales a tus favoritos.</p>
+
+        <div class="animal-card" id="tigre">
+            <h3>Tigre de Bengala</h3>
+            <button onclick="addFavorite('Tigre de Bengala')">Agregar a Favoritos</button>
+        </div>
+        <div class="animal-card" id="aguila">
+            <h3>Águila Real</h3>
+            <button onclick="addFavorite('Águila Real')">Agregar a Favoritos</button>
+        </div>
+        <div class="animal-card" id="tortuga">
+            <h3>Tortuga Marina</h3>
+            <button onclick="addFavorite('Tortuga Marina')">Agregar a Favoritos</button>
+        </div>
+
+        <h3>Mis Animales Favoritos</h3>
+        <ul id="favorite-list">
+           
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>Derechos Reservados AnimalInfo &COPY; 2025</p>
+    </footer>
+
+    <script>
+        function addFavorite(animal) {
+            const ul = document.getElementById('favorite-list');
+            const li = document.createElement('li');
+            li.textContent = animal;
+            ul.appendChild(li);
+        }
+    </script>
+</body>
+</html>
