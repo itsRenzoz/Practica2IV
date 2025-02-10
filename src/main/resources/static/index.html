@@ -1,0 +1,105 @@
+<!DOCT<!DOCTYPE html>
+<html>
+    <head>
+        <title>AnimalInfo</title>
+        <meta charset="UTF-8"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link">AnimalInfo</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframes.html">iFrames</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formulario.html">Formulario</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audio.html">Audio</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="InformacionAnimal.html">InfoAnimal</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="DondeVerAnimales.html">ZooMap</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="FavAnimales.html">AnimalesFav</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside class="aside">
+            <h2 class="noticia">Animal del Día</h2>
+            <p>El lobo gris es un mamífero carnívoro que habita en diversas partes del mundo. Es conocido por su inteligencia y su gran capacidad de adaptación.</p>
+        </aside>
+
+        <section class="iframe-section">
+            <h2>Video del Día</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=IU6L3WoPybA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="section">
+            <article>
+                <header>
+                    <h2>Ficha Técnica: Tigre de Bengala</h2>
+                </header>
+                <p><strong>Nombre científico:</strong> Panthera tigris tigris</p>
+                <p><strong>Hábitat:</strong> Bosques y manglares de India y Bangladesh</p>
+                <p><strong>Alimentación:</strong> Carnívoro</p>
+                <figure>
+                    <img src="img/tigre.jpg" alt="Imagen de un tigre de Bengala" width="200"/>
+                    <figcaption>Tigre de Bengala en su hábitat natural</figcaption>
+                </figure>
+            </article>
+            <article>
+                <h2>Ficha Técnica: Águila Real</h2>
+                <p><strong>Nombre científico:</strong> Aquila chrysaetos</p>
+                <p><strong>Hábitat:</strong> Montañas y bosques templados</p>
+                <p><strong>Alimentación:</strong> Carnívoro</p>
+                <figure>
+                    <img src="img/aguila.jpg" alt="Imagen de un águila real" width="200"/>
+                    <figcaption>Águila Real en pleno vuelo</figcaption>
+                </figure>
+            </article>
+            <article>
+                <h2>Ficha Técnica: Tortuga Marina</h2>
+                <p><strong>Nombre científico:</strong> Cheloniidae</p>
+                <p><strong>Hábitat:</strong> Océanos tropicales y subtropicales</p>
+                <p><strong>Alimentación:</strong> Omnívoro</p>
+                <figure>
+                    <img src="img/tortuga.jpg" alt="Imagen de una tortuga marina" width="200"/>
+                    <figcaption>Tortuga Marina en su entorno natural</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contacto</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="audios-section">
+            <h2>Sonido del Día</h2>
+            <audio controls>
+                <source src="audio/lobo-gris.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+
+        <section class="animal-info">
+            <h2>Información sobre Animales</h2>
+            <button onclick="location.href='subirAnimal.html'">Subir Información</button>
+            <div id="lista-animales">
+                <!-- Aquí se cargarán las imágenes y la información de los animales -->
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Derechos Reservados AnimalInfo &COPY; 2025</p>
+        </footer>
+    </body>
+</html>
